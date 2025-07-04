@@ -6,7 +6,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "libro")
+@Table(name = "libri")
 public class Libro extends ElementoCatalogo {
 
     @Column(nullable = false)

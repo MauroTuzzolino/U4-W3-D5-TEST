@@ -8,10 +8,7 @@ import jakarta.persistence.*;
 public abstract class ElementoCatalogo {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, length = 13)
     private String isbn;
 
     @Column(nullable = false)
@@ -31,14 +28,6 @@ public abstract class ElementoCatalogo {
         this.titolo = titolo;
         this.annoPubblicazione = annoPubblicazione;
         this.numeroPagine = numeroPagine;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     public String getIsbn() {

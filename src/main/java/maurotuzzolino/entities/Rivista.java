@@ -3,7 +3,7 @@ package maurotuzzolino.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "rivista")
+@Table(name = "riviste")
 public class Rivista extends ElementoCatalogo {
 
     @Enumerated(EnumType.STRING)
