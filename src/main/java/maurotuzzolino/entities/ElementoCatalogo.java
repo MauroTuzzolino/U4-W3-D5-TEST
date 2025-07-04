@@ -9,7 +9,7 @@ public abstract class ElementoCatalogo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @Column(nullable = false, unique = true)
     private String isbn;
@@ -26,8 +26,7 @@ public abstract class ElementoCatalogo {
     public ElementoCatalogo() {
     }
 
-    public ElementoCatalogo(Long id, String isbn, String titolo, int annoPubblicazione, int numeroPagine) {
-        this.id = id;
+    public ElementoCatalogo(String isbn, String titolo, int annoPubblicazione, int numeroPagine) {
         this.isbn = isbn;
         this.titolo = titolo;
         this.annoPubblicazione = annoPubblicazione;
