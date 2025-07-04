@@ -10,7 +10,7 @@ import java.time.LocalDate;
 public class Prestito {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "utente_id")
