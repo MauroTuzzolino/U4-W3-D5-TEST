@@ -39,11 +39,11 @@ public class Prestito {
         this.dataRestituzionePrevista = dataInizio.plusDays(30);
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

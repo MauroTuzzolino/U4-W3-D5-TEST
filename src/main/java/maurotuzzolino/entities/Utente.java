@@ -29,13 +29,14 @@ public class Utente {
     public Utente() {
     }
 
-    public Utente(String nome, String cognome, LocalDate dataNascita, String numeroTessera, List<Prestito> prestiti) {
+    public Utente(String numeroTessera, String nome, String cognome, LocalDate dataNascita) {
+        this.numeroTessera = numeroTessera;
         this.nome = nome;
         this.cognome = cognome;
         this.dataNascita = dataNascita;
-        this.numeroTessera = numeroTessera;
+
     }
-    
+
     public String getNome() {
         return nome;
     }

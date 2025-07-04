@@ -18,7 +18,7 @@ public class PrestitoDAO {
 
     // Aggiunta di un nuovo prestito
     public void aggiungiPrestito(Prestito prestito) {
-        if (prestito.getId() == null) {
+        if (false) {
             em.persist(prestito);
         } else {
             em.merge(prestito);
@@ -26,7 +26,7 @@ public class PrestitoDAO {
     }
 
     // Ricerca per Id
-    public Optional<Prestito> ricercaPerId(Long id) {
+    public Optional<Prestito> ricercaPerId(long id) {
         return Optional.ofNullable(em.find(Prestito.class, id));
     }
 
